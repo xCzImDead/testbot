@@ -898,7 +898,7 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'السلام عليكم') {
-              message.channel.send(' وِ عَ ـلَيّكمِ آلَسًسًـلَآمِ وِ رحً ـمِة آلَلَهِ تُعَ ـآلَى وِ بّـركآتُهِ:heart: ${member} ');
+              message.channel.send(' وِ عَ ـلَيّكمِ آلَسًسًـلَآمِ وِ رحً ـمِة آلَلَهِ تُعَ ـآلَى وِ بّـركآتُهِ:heart: ');
                
 
             }
@@ -910,7 +910,7 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'هلا') {
-              message.channel.send(' هِلَآ بّـيّك:heart: ${member} ');
+              message.channel.send(' هِلَآ بّـيّك:heart: ');
                
 
             }
@@ -922,7 +922,7 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'برب') {
-              message.channel.send(' تُيّتُ لَآ تُطٌوِلَ عَ ـلَيّنٌآ:heart: ${member} ');
+              message.channel.send(' تُيّتُ لَآ تُطٌوِلَ عَ ـلَيّنٌآ:heart: ');
                
 
             }
@@ -935,7 +935,7 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'باك') {
-              message.channel.send(' وِلَكمِ بّـآك مِنٌوِر يّآ عَ ـسًسًـلَ:heart: ${member} ');
+              message.channel.send(' وِلَكمِ بّـآك مِنٌوِر يّآ عَ ـسًسًـلَ:heart: ');
                
 
             }
@@ -944,7 +944,7 @@ client.on('ready', () => {
 
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(`ولكم نورت السيرفر ${member} `) 
+  return channel.send(`ولكم نورت السيرفر `) 
 }).catch(console.error)
 
 });
