@@ -893,55 +893,6 @@ client.on('message', message => {
 
 
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message => {
-            if (message.content === 'السلام عليكم') {
-               msg.reply(' وِ عَ ـلَيّكمِ آلَسًسًـلَآمِ وِ رحً ـمِة آلَلَهِ تُعَ ـآلَى وِ بّـركآتُهِ:heart: @here ');
-               
-
-            }
-}); 
-
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message => {
-            if (message.content === 'هلا') {
-               msg.reply(' هِلَآ بّـيّك:heart: @here ');
-               
-
-            }
-}); 
-
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message => {
-            if (message.content === 'برب') {
-               msg.reply(' تُيّتُ لَآ تُطٌوِلَ عَ ـلَيّنٌآ:heart: @here ');
-               
-
-            }
-}); 
-
-
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message => {
-            if (message.content === 'باك') {
-               msg.reply(' وِلَكمِ بّـآك مِنٌوِر يّآ عَ ـسًسًـلَ:heart: @here ');
-               
-
-            }
-}); 
-
-
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
   return channel.send(`ولكم نورت السيرفر `) 
