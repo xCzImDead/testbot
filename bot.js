@@ -898,7 +898,7 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'السلام عليكم') {
-              message.channel.send(' وِ عَ ـلَيّكمِ آلَسًسًـلَآمِ وِ رحً ـمِة آلَلَهِ تُعَ ـآلَى وِ بّـركآتُهِ:heart: @here ');
+               msg.reply(' وِ عَ ـلَيّكمِ آلَسًسًـلَآمِ وِ رحً ـمِة آلَلَهِ تُعَ ـآلَى وِ بّـركآتُهِ:heart: @here ');
                
 
             }
@@ -910,7 +910,7 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'هلا') {
-              message.channel.send(' هِلَآ بّـيّك:heart: @here ');
+               msg.reply(' هِلَآ بّـيّك:heart: @here ');
                
 
             }
@@ -922,7 +922,7 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'برب') {
-              message.channel.send(' تُيّتُ لَآ تُطٌوِلَ عَ ـلَيّنٌآ:heart: @here ');
+               msg.reply(' تُيّتُ لَآ تُطٌوِلَ عَ ـلَيّنٌآ:heart: @here ');
                
 
             }
@@ -935,7 +935,7 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'باك') {
-              message.channel.send(' وِلَكمِ بّـآك مِنٌوِر يّآ عَ ـسًسًـلَ:heart: @here ');
+               msg.reply(' وِلَكمِ بّـآك مِنٌوِر يّآ عَ ـسًسًـلَ:heart: @here ');
                
 
             }
