@@ -892,39 +892,53 @@ client.on('message', message => {
 
 
 
-const Discord = require('discord.js');
-const client = new Discord.Client();
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === 'السلام عليكم') {
+              message.channel.send(' وِ عَ ـلَيّكمِ آلَسًسًـلَآمِ وِ رحً ـمِة آلَلَهِ تُعَ ـآلَى وِ بّـركآتُهِ:heart: ');
+               
+
+            }
+}); 
+
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
+         client.on('message', message => {
+            if (message.content === 'هلا') {
+              message.channel.send(' هِلَآ بّـيّك:heart: ');
+               
 
-client.on('message', msg => {
-  if (msg.content === 'برب') {
-    msg.reply('تُيّتُ لَآ تُطٌوِلَ عَ ـلَيّنٌآ:heart:');
- }
- 
-});
-client.on('message', msg => {
-  if (msg.content === 'باك') {
-    msg.reply('وِلَكمِ بّـآك مِنٌوِر يّآ عَ ـسًسًـلَ:heart: ');
+            }
+}); 
 
- }
-  
-});
-client.on('message', msg => {
-  if (msg.content === 'السلام عليكم') {
-    msg.reply(' وِ عَ ـلَيّكمِ آلَسًسًـلَآمِ وِ رحً ـمِة آلَلَهِ تُعَ ـآلَى وِ بّـركآتُهِ:heart:');
 
- }
-  
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
 });
-client.on('message', msg => {
-  if (msg.content === 'هلا') {
-    msg.reply('هِلَآ وِآلَلَهِ مِنٌوِر:heart:');
- }
- 
+         client.on('message', message => {
+            if (message.content === 'برب') {
+              message.channel.send(' تُيّتُ لَآ تُطٌوِلَ عَ ـلَيّنٌآ:heart: ');
+               
+
+            }
+}); 
+
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
 });
+         client.on('message', message => {
+            if (message.content === 'باك') {
+              message.channel.send(' وِلَكمِ بّـآك مِنٌوِر يّآ عَ ـسًسًـلَ:heart: ');
+               
+
+            }
+}); 
 
 
 
