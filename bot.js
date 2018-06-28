@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '.'
+const prefix = '*'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -973,10 +973,7 @@ client.on("guildMemberAdd", member => {
 });
 
 	
-	client.on('ready', () => {
-     client.user.setActivity(" *help",{type: 'WATCHING'})
 
-});
 
 
 client.login(process.env.BOT_TOKEN);
