@@ -28,4 +28,28 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
+
+
+client.on('message', message => {
+     if (message.content === "*help") {
+     let embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField('═══════════ஜ۩۞۩ஜ════════════','￵ ')
+.addField('يرجى استخدام الأوامر التالية :','￵ ')
+.addField('*help-public','￵ ')
+.addField('🌎لمعرفة كافة أوامر العامة🌎','￵ ')
+.addField('*help-admin','￵ ')
+.addField('👑لمعرفة أوامر الأدارية👑','￵ ')
+.addField('*help-games','￵ ')
+.addField('🎮لمعرفة أوامر الالعاب🎮','￵ ')
+.addField('═══════════ஜ۩۞۩ஜ════════════','King | Bot')
+.setColor('RANDOM')
+  message.channel.sendEmbed(embed);
+    }
+}); 
+   
+
+
+
+
 client.login(process.env.BOT_TOKEN);
