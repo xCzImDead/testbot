@@ -34,7 +34,7 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
 .addField('༺༻༺༻༺༻༺༻༺༻༺༻༺༻༺༻༺༻༺༻','￵ ')
-.addField('يرجى استخدام الأوامر التالية :','￵ ')
+.addField(':يرجى استخدام الأوامر التالية ','￵ ')
 .addField('*public','￵ ')
 .addField(':earth_africa: الاوامــر الــعـــامـــة:earth_africa:','￵ ')
 .addField('*admin','￵ ')
@@ -51,7 +51,7 @@ client.on('message', message => {
    client.on("message", message => {
  if (message.content === "*public") {
         message.react("📫")
-        message.react("✔️")
+	           message.react("✅")
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
@@ -347,8 +347,8 @@ client.on('guildMemberAdd', member => {
    client.on("message", message => {
  if (message.content === "*admin") {
         message.react("📫")
-        message.react("✔️")
-  const embed = new Discord.RichEmbed() 
+	           message.react("✅")
+const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
       .setDescription(`
@@ -727,7 +727,7 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
 	   client.on("message", message => {
  if (message.content === "*games") {
         message.react("📫")
-	           message.react("✔️")
+	           message.react("✅")
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
