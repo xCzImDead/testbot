@@ -347,7 +347,7 @@ client.on('guildMemberAdd', member => {
    client.on("message", message => {
  if (message.content === "*admin") {
         message.react("📫")
-                message.react("✔️")
+                .then(() =>message.react("✔️")
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
