@@ -51,7 +51,7 @@ client.on('message', message => {
    client.on("message", message => {
  if (message.content === "*public") {
         message.react("📫")
-                message.react("✔️")
+        message.react("✔️")
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
