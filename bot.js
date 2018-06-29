@@ -33,15 +33,15 @@ client.on('message', message => {
      if (message.content === "*help") {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('═══════════ஜ۩۞۩ஜ════════════','￵ ')
+.addField('༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻','￵ ')
 .addField('يرجى استخدام الأوامر التالية :','￵ ')
-.addField('*help-public','￵ ')
+.addField('༺༻ *public ༺༻','￵ ')
 .addField('🌎لمعرفة كافة أوامر العامة🌎','￵ ')
-.addField('*help-admin','￵ ')
+.addField('༺༻ *admin ༺༻','￵ ')
 .addField('👑لمعرفة أوامر الأدارية👑','￵ ')
-.addField('*help-games','￵ ')
+.addField('༺༻ *games ༺༻','￵ ')
 .addField('🎮لمعرفة أوامر الالعاب🎮','￵ ')
-.addField('═══════════ஜ۩۞۩ஜ════════════','￵ ')
+.addField('༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻','￵ ')
 .setColor('RANDOM')
   message.channel.sendEmbed(embed);
     }
@@ -49,7 +49,7 @@ client.on('message', message => {
    
 
    client.on("message", message => {
- if (message.content === "*help-public") {
+ if (message.content === "*public") {
         message.react("📫")
                 message.react("✔️")
   const embed = new Discord.RichEmbed() 
@@ -345,7 +345,7 @@ client.on('guildMemberAdd', member => {
    
    
    client.on("message", message => {
- if (message.content === "*help-admin") {
+ if (message.content === "*admin") {
         message.react("📫")
                 message.react("✔️")
   const embed = new Discord.RichEmbed() 
@@ -725,9 +725,9 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
 	
 	
 	   client.on("message", message => {
- if (message.content === "*help-games") {
+ if (message.content === "*games") {
         message.react("📫")
-                message.react("✔️")
+	           message.react("✔️")
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
