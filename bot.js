@@ -33,7 +33,7 @@ client.on('message', message => {
      if (message.content === "*help") {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻','￵ ')
+.addField('༺༻༺༻༺༻༺༻༺༻༺༻༺༻༺༻༺༻༺༻','￵ ')
 .addField('يرجى استخدام الأوامر التالية :','￵ ')
 .addField('*public','￵ ')
 .addField(':earth_africa: الاوامــر الــعـــامـــة:earth_africa:','￵ ')
@@ -41,7 +41,7 @@ client.on('message', message => {
 .addField(':closed_lock_with_key: اوامـــر الادمـــنـــيــــة:closed_lock_with_key:','￵ ')
 .addField('*games','￵ ')
 .addField(':speech_balloon: الالـــعـــاب:speech_balloon:','￵ ')
-.addField('༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻༺▇༻','￵ ')
+.addField('༺༻༺༻༺༻༺༻༺༻༺༻༺༻༺༻༺༻༺༻','￵ ')
 .setColor('RANDOM')
   message.channel.sendEmbed(embed);
     }
