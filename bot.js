@@ -572,9 +572,11 @@ client.on('message', message => {
 	
 	
 	
-	client.on('message', message => {
+client.on('message', message => {
+  let prefix = "*"
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
+      console.log(`Diamond Team`);
  
   let command = message.content.split(" ")[0];
   command = command.slice(prefix.length);
