@@ -4,7 +4,6 @@ const prefix = '*'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`*help`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -944,7 +943,10 @@ client.on("guildMemberAdd", member => {
 });
 
 	
+client.on('ready', () => {
+     client.user.setActivity("*help",{type: 'WATCHING'});
 
+});
 
 
 client.login(process.env.BOT_TOKEN);
