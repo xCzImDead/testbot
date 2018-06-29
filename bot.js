@@ -139,7 +139,7 @@ message.author.sendEmbed(embed)
 
 
 client.on('message', message => {
-   if (message.content.startsWith("+id")) {
+   if (message.content.startsWith("*id")) {
                 if(!message.channel.guild) return message.reply('**هذا الامر فقط في السيرفرات وشكرا**');
 
                var mentionned = message.mentions.users.first();
@@ -467,22 +467,17 @@ msg.delete();
 
 
 
-client.on('message', message => {
-  if(!message.channel.guild) return;
-let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('*bc')){
-message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
-client.users.forEach(m =>{
-var bc = new
-Discord.RichEmbed()
-.setColor('RANDOM')
-.setTitle('Broadcast')
-.addField('Server', message.guild.name)
-.addField('Sender', message.author.username)
-.addField('Message', args)
-m.send({ embed: bc })
-})
-}
+client.on('message', msg =>{
+    let message=msg;
+    if(message.content.startsWith("*bc")){
+        var args = message.content.split(' ').slice(1).join(' ');
+    msg.guild.members.forEach(m=>{
+        m.send(args.replace(/[user]/g,m)).catch();
+    if(message.attachments.first()){
+m.sendFile(message.attachments.first().url).catch();
+    }
+    })    ;
+    }
 });
 
 	
