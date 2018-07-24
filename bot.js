@@ -151,7 +151,7 @@ client.on('message', function(message) {
 			dispatcher.pause();
 		});
 	}
-	else if (mess.startsWith(prefix + 'unpause')) {
+	else if (mess.startsWith(prefix + 'resume')) {
 		if (!message.member.voiceChannel) return message.reply('**Sorry,youre not on a voice channel**');
 		message.reply(':gear: **You have replayed the music**').then(() => {
 			dispatcher.resume();
